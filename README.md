@@ -1,4 +1,4 @@
-# Portafolio Profesional y Académico - Aram Isai Orozco Soto
+# Portafolio Web Con Diseño Interactivo y Responsivo
 
 ## Descripción General del Proyecto
 
