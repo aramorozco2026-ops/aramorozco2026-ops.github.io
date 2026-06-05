@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aram Isai Orozco Soto | Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-preloader">
+        <span class="logo-bracket">&lt;</span>AIO<span class="logo-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- SOCIAL SIDEBAR -->
+  <aside class="social-sidebar">
+    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" class="social-side-link"
+      data-tooltip="Perfil de LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/aramorozco2026-ops" target="_blank" aria-label="GitHub" class="social-side-link"
+      data-tooltip="Repositorio de GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.indeed.com" target="_blank" aria-label="Indeed" class="social-side-link"
+      data-tooltip="Perfil de Indeed">
+      <i class="fas fa-briefcase"></i>
+    </a>
+    <a href="cv.html" aria-label="Ver CV" class="social-side-link" title="Ver CV" data-tooltip="Ver CV">
+      <i class="fas fa-file-alt"></i>
+    </a>
+  </aside>
+
+  <!-- FONDO ANIMADO -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header id="header">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-bracket">&lt;</span>AIO<span class="logo-bracket">/&gt;</span>
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#estudios" class="nav-link">Estudios</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- LANG TOGGLE -->
+        <button id="lang-toggle" aria-label="Cambiar idioma">
+          <span id="lang-text">EN</span>
+        </button>
+        <!-- DARK/LIGHT TOGGLE -->
+        <button id="theme-toggle" aria-label="Cambiar tema">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <!-- HAMBURGUESA -->
+        <button id="hamburger" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#sobre-mi" class="mob-link">Sobre mí</a></li>
+        <li><a href="#estudios" class="mob-link">Estudios</a></li>
+        <li><a href="#habilidades" class="mob-link">Habilidades</a></li>
+        <li><a href="#experiencia" class="mob-link">Experiencia</a></li>
+        <li><a href="#proyectos" class="mob-link">Proyectos</a></li>
+        <li><a href="#contacto" class="mob-link">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO / SOBRE MÍ ==================== -->
+    <section id="sobre-mi" class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-text fade-in">
+          <p class="hero-greeting">Hola, soy</p>
+          <h1 class="hero-name typewriter">Aram Isai<br><span class="accent">Orozco Soto</span></h1>
+          <p class="hero-title typewriter">Ingeniero en Sistemas Electrónicos Inteligentes<br>
+            <span class="hero-sub">Técnico en Automatización y Integración Industrial · Desarrollador</span>
+          </p>
+          <p class="hero-desc">
+            Apasionado por la electrónica inteligente, los sistemas embebidos y el desarrollo de software.
+            Con experiencia práctica en automatización industrial y conocimientos académicos en SEI.
+            Actualmente cursando la carrera en la <strong>Universidad Autónoma de Ciudad Juárez</strong>.
+          </p>
+          <div class="hero-tags">
+            <span class="tag"><i class="fas fa-map-marker-alt"></i> Cd. Juárez, Chih.</span>
+            <span class="tag"><i class="fas fa-graduation-cap"></i> UACJ · SEI</span>
+            <span class="tag"><i class="fas fa-language"></i> Inglés B2</span>
+            <span class="tag"><i class="fas fa-birthday-cake"></i> 23 años</span>
+          </div>
+          <div class="hero-ctas">
+            <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+            <a href="cv.html" class="btn-ghost"><i class="fas fa-file-alt"></i> Ver CV Web</a>
+            <a href="#contacto" class="btn-ghost">Contáctame</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar fade-in delay-2">
+          <div class="avatar-ring">
+            <label for="avatar-upload" class="avatar-placeholder" id="avatar-container" style="cursor: pointer;"
+              title="Haz clic para cambiar foto">
+              <img id="user-avatar-img" src="perfil.JPG" alt="Avatar"
+                style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+              <i class="fas fa-user" id="avatar-icon" style="display: none;"></i>
+            </label>
+            <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+          </div>
+          <div class="avatar-badge">
+            <i class="fas fa-microchip"></i> Disponible
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==================== ESTUDIOS ==================== -->
+    <section id="estudios" class="section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label typewriter">Formación</span>
+          <h2 class="section-title typewriter" data-en="Academic <span class='accent'>Trajectory</span>">Trayectoria
+            <span class="accent">Académica</span>
+          </h2>
+        </div>
+
+        <div class="timeline fade-in">
+          <ol class="timeline-list">
+            <li class="timeline-item active">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-card">
+                <div class="tl-header">
+                  <div>
+                    <h3>Ingeniería en Sistemas Electrónicos Inteligentes (SEI)</h3>
+                    <p class="tl-institute">Universidad Autónoma de Ciudad Juárez (UACJ)</p>
+                  </div>
+                  <span class="tl-badge current">En curso</span>
+                </div>
+                <p class="tl-period"><i class="fas fa-calendar-alt"></i> 2022 – Actualidad · 3 años completados</p>
+                <p class="tl-desc">
+                  Carrera enfocada en la implementación de sistemas electrónicos inteligentes para la solución
+                  a problemas complejos de la ingeniería, aplicando la electrónica, diseño de
+                  semiconductores, desarrollo de software, inteligencia artificial, la electromovilidad,
+                  Internet de las cosas y tecnologías emergentes.
+                </p>
+                <div class="tl-skills">
+                  <span>Sistemas Embebidos</span>
+                  <span>Electrónica Analógica y Digital</span>
+                  <span>Programación Avanzada</span>
+                  <span>Machine Learning</span>
+                  <span>Diseño de Circuitos</span>
+                  <span>Matemática para IA</span>
+                  <span>IoT</span>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-card">
+                <div class="tl-header">
+                  <div>
+                    <h3>Preparatoria</h3>
+                    <p class="tl-institute">Colegio Alejandro Magno</p>
+                  </div>
+                  <span class="tl-badge">Completado</span>
+                </div>
+                <p class="tl-period"><i class="fas fa-calendar-alt"></i> 2017 - 2020</p>
+                <p class="tl-desc">Formación media superior con orientación hacia ciencias exactas e ingeniería.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BANNER CV ==================== -->
+    <section class="section section-cv-download" style="padding: 40px 28px 0px;">
+      <div class="section-inner">
+        <div class="glass-card cv-banner-card fade-in">
+          <div class="cv-banner-content">
+            <div class="cv-icon-box">
+              <i class="fas fa-address-card"></i>
+            </div>
+            <div class="cv-text-box">
+              <h3>¿Quieres ver mi perfil completo?</h3>
+              <p>Puedes consultar mi currículum interactivo en versión web y exportarlo a PDF desde allí.</p>
+            </div>
+            <div class="cv-banner-buttons">
+              <a href="cv.html" class="btn-primary">
+                <i class="fas fa-eye"></i> Ver CV Web
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HABILIDADES ==================== -->
+    <section id="habilidades" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label typewriter">Capacidades</span>
+          <h2 class="section-title typewriter" data-en="Technical <span class='accent'>Skills</span>">Habilidades <span
+              class="accent">Técnicas</span></h2>
+        </div>
+
+        <div class="skills-grid fade-in">
+
+          <!-- PROGRAMACIÓN -->
+          <article class="glass-card skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Programación</h3>
+            <dl class="skill-dl">
+              <dt>Web Full Stack</dt>
+              <dd>HTML · CSS · JavaScript</dd>
+              <dt>Lenguajes de Propósito General</dt>
+              <dd>C · C++ · Python · MATLAB </dd>
+              <dt>Embebido &amp; Hardware</dt>
+              <dd>MicroPython · Ensamblador · NumPy · VHDL</dd>
+            </dl>
+          </article>
+
+          <!-- SISTEMAS EMBEBIDOS -->
+          <article class="glass-card skill-card">
+            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Sistemas Embebidos</h3>
+            <dl class="skill-dl">
+              <dt>Microprocesadores</dt>
+              <dd>Implementación y programación directa sobre hardware</dd>
+              <dt>Integración Hardware/Software</dt>
+              <dd>Electrónica y lógica de control</dd>
+              <dt>Programación de Microcontroladores</dt>
+              <dd>Ensamblador · Microcontroladores PIC · ESP32 </dd>
+            </dl>
+          </article>
+
+          <!-- MACHINE LEARNING -->
+          <article class="glass-card skill-card">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <h3>Machine Learning</h3>
+            <dl class="skill-dl">
+              <dt>Modelos Clasificadores</dt>
+              <dd>Implementación en Python (Pandas, PyTorch, NumPy)</dd>
+              <dt>Modelos Predictivos</dt>
+              <dd>Análisis y predicción de conjuntos de datos</dd>
+              <dt>Álgebra Lineal Aplicada</dt>
+              <dd>Base matemática para IA</dd>
+            </dl>
+          </article>
+
+          <!-- ELECTRÓNICA -->
+          <article class="glass-card skill-card">
+            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Electrónica Analógica &amp; Digital</h3>
+            <dl class="skill-dl">
+              <dt>Sistemas y Circuitos Digitales</dt>
+              <dd>Diseño y simulación de sistemas lógicos · Lógica binaria · Aplicación de álgebra booleana</dd>
+              <dt>VHDL</dt>
+              <dd>Programación y diseño de hardware en FPGA</dd>
+              <dt>Electrónica Básica</dt>
+              <dd>Uso de componentes electrónicos y diseño de circuitos para prácticas académicas</dd>
+            </dl>
+          </article>
+
+          <!-- AUTOMATIZACIÓN -->
+          <article class="glass-card skill-card">
+            <div class="skill-icon"><i class="fas fa-industry"></i></div>
+            <h3>Automatización Industrial</h3>
+            <dl class="skill-dl">
+              <dt>Gabinetes Eléctricos y de Control</dt>
+              <dd>Construcción, armado y cableado</dd>
+              <dt>Sistemas Neumáticos y Mecánicos</dt>
+              <dd>Ensamblaje e integración de maquinaria para sector maquilador</dd>
+              <dt>Diagnóstico de Fallas</dt>
+              <dd>Detección y corrección técnica en el área industrial </dd>
+
+          </article>
+
+          <!-- COMPETENCIAS BLANDAS -->
+          <article class="glass-card skill-card">
+            <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+            <h3>Competencias</h3>
+            <dl class="skill-dl">
+              <dt>Resolución de Problemas</dt>
+              <dd>Pensamiento lógico y analítico</dd>
+              <dt>Trabajo en Equipo</dt>
+              <dd>Adaptabilidad en entornos industriales</dd>
+              <dt>Idiomas</dt>
+              <dd>Español (Nativo) · Inglés (B2)</dd>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCIA ==================== -->
+    <section id="experiencia" class="section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label typewriter">Trayectoria</span>
+          <h2 class="section-title typewriter" data-en="Work <span class='accent'>Experience</span>">Experiencia
+            <span class="accent">Laboral</span>
+          </h2>
+        </div>
+
+        <div class="exp-container fade-in">
+          <article class="glass-card exp-card">
+            <div class="exp-header">
+              <div class="exp-logo"><i class="fas fa-cogs"></i></div>
+              <div class="exp-info">
+                <h3>Técnico en Automatización e Integración Industrial</h3>
+                <p class="exp-company">Durol Sistemas y Servicios, S.A. de C.V. · Ciudad Juárez, Chihuahua</p>
+                <p class="exp-period">
+                  <i class="fas fa-clock"></i> 1 año
+                  <span class="exp-badge finished">Concluido</span>
+                </p>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p>Participación activa en el diseño y fabricación de maquinaria y líneas de producción
+                para la industria maquiladora de la región.</p>
+              <ul class="exp-list">
+                <li><i class="fas fa-check-circle"></i> Construcción, armado y cableado de gabinetes eléctricos</li>
+                <li><i class="fas fa-check-circle"></i> Interpretación y análisis de diagramas eléctricos</li>
+                <li><i class="fas fa-check-circle"></i> Ensamblaje de sistemas eléctricos y neumáticos</li>
+                <li><i class="fas fa-check-circle"></i> Fabricación de maquinaria para industria maquiladora</li>
+                <li><i class="fas fa-check-circle"></i> Diagnóstico, detección y corrección de fallas técnicas</li>
+                <li><i class="fas fa-check-circle"></i> Uso de herramientas especializadas en automatización industrial
+                </li>
+                <li><i class="fas fa-check-circle"></i> Programación de PLC básico</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTOS ==================== -->
+    <section id="proyectos" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label typewriter">Portafolio</span>
+          <h2 class="section-title typewriter">Proyectos <span class="accent">Realizados</span></h2>
+        </div>
+
+        <!-- FILTROS DE PROYECTOS -->
+        <div class="filter-container fade-in">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="hardware">Hardware / Electrónica</button>
+          <button class="filter-btn" data-filter="ml">IA & ML</button>
+        </div>
+
+
+        <div class="projects-grid fade-in">
+
+          <article class="glass-card project-card" data-category="software">
+            <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Portafolio Web Interactivo</h3>
+              <p>Desarrollo de un portafolio web interactivo con diseño responsivo,
+                modo oscuro y soporte bilingüe (Español/Inglés). </p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico · Personal</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="hardware">
+            <div class="project-icon"><i class="fas fa-lock"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>C++</span><span>Microprocesador</span></div>
+              <h3>Sistema de Seguridad Embebido (Candado Electrónico)</h3>
+              <p>Sistema de simulación de candado electrónico implementado con microcontrolador.
+                Gestión de contraseñas y acceso controlado mediante lógica embebida en C++.</p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="software">
+            <div class="project-icon"><i class="fas fa-key"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>C++</span></div>
+              <h3>Gestor de Contraseñas</h3>
+              <p>Sistema de almacenamiento seguro de contraseñas en C++.
+                Implementa estructuras de datos para la gestión eficiente de credenciales.</p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="hardware">
+            <div class="project-icon"><i class="fas fa-guitar"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Electrónica</span><span>Diodos</span></div>
+              <h3>Pedal de Distorsión Analógico</h3>
+              <p>Diseño y construcción de un sistema de procesamiento de audio analógico mediante redes de diodos,
+                aplicando filtrado de señales y principios de electrónica analógica para aplicaciones musicales.</p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico · Personal</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="hardware">
+            <div class="project-icon"><i class="fas fa-sitemap"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>VHDL</span><span>FPGA</span><span>Basys3</span></div>
+              <h3>Lógica Digital en VHDL</h3>
+              <p>Desarrollo de programas de lógica digital con uso de tarjeta FPGA modelo Basys3.
+                Diseño de circuitos combinacionales y secuenciales para la demostración práctica y comprensión.</p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="hardware">
+            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>MicroPython</span><span>ESP32</span><span>HTML/CSS</span></div>
+              <h3>Diseño de programas con ESP32 y electrónica analógica</h3>
+              <p>Programas de lógica matemática implementados sobre microprocesadores
+                empleando MicroPython para control, procesamiento numérico con uso de interfaces programadas vía HTML y
+                uso de bibliotecas como FLASK y similares. </p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="hardware">
+            <div class="project-icon"><i class="fas fa-terminal"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Ensamblador</span><span>Hardware</span></div>
+              <h3>Programas en Ensamblador</h3>
+              <p>Desarrollo de programas básicos en lenguaje ensamblador para control y
+                comprensión profunda del hardware a bajo nivel para la demostración práctica y de comprensión básica del
+                lenguaje.</p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico</span>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="ml">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Python</span><span>Machine Learning</span></div>
+              <h3>Modelos de ML</h3>
+              <p>Implementación de clasificadores y modelos predictivos de datos usando
+                Python. Aplicación de técnicas de Machine Learning para análisis y predicción.</p>
+            </div>
+            <div class="project-footer">
+              <span class="proj-type">Académico</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label typewriter">¿Trabajamos juntos?</span>
+          <h2 class="section-title typewriter">Contáctame <span class="accent">Hoy</span></h2>
+        </div>
+
+        <div class="contact-layout fade-in">
+          <div class="contact-info">
+            <p class="contact-intro">
+              Estoy abierto a oportunidades laborales y colaboraciones. Contáctame y te responderé lo más pronto
+              posible.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <div>
+                  <strong>Ubicación</strong>
+                  <span>Ciudad Juárez, Chihuahua, México</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div>
+                  <strong>Universidad</strong>
+                  <span>UACJ – Ingeniería en SEI</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="fas fa-briefcase"></i></span>
+                <div>
+                  <strong>Empresa Actual</strong>
+                  <span>Durol Sistemas y Servicios, S.A. de C.V.</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="fas fa-language"></i></span>
+                <div>
+                  <strong>Idiomas</strong>
+                  <span>Español (Nativo) · Inglés (B2)</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                <div>
+                  <strong>Correo Personal</strong>
+                  <span>aramorozco2015@gmail.com</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="fas fa-envelope-open-text"></i></span>
+                <div>
+                  <strong>Correo Universitario</strong>
+                  <span>al229095@alumnos.uacj.mx</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                <div>
+                  <strong>Teléfono</strong>
+                  <span>(+52) 656 313 8479</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="glass-card contact-form" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              <span class="field-error" id="error-nombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+              <span class="field-error" id="error-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <input type="text" id="asunto" name="asunto" placeholder="¿En qué puedo ayudarte?" required />
+              <span class="field-error" id="error-asunto"></span>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"
+                required></textarea>
+              <span class="field-error" id="error-mensaje"></span>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+            <div id="form-success" class="form-success" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>AIO<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p>© 2025 Aram Isai Orozco Soto · Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
